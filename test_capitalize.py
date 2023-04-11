@@ -5,4 +5,4 @@ def capitalize_string(s):
 
 #The test function
 def test_capitalize_string():
-    assert capitalize_string('test') == 'test'
+    assert capitalize_string('test') == 'Test'
