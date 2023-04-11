@@ -1,5 +1,3 @@
-Doc : https://www.techiediaries.com/python-unit-tests-github-actions/
-
 # Création de test unitaires en python et lancement des test avec github action
 
 ## 1. Installer l'outil de test python
@@ -20,15 +18,15 @@ Si vous n'utiliser pas `pipenv`, la commande `pip install pytest` sera plus adé
 
 Maintenant nous allons créer un fichier s'appelant 'test_capitalize.py', puis écrire le code suivant dedans :
 ```python
-	def capitalize_string(s):
-	if not isinstance(s, str):
-		raise TypeError('Please provide a string')
-	return s.capitalize()
+def capitalize_string(s):
+if not isinstance(s, str):
+	raise TypeError('Please provide a string')
+return s.capitalize()
 
-	# Cette fonction sert de test
-	# Elle test la fonction de dessus en comparant la valeur voulue et la valeur retournée 
-	def test_capitalize_string():
-		assert capitalize_string('test') == 'Test'
+# Cette fonction sert de test
+# Elle test la fonction de dessus en comparant la valeur voulue et la valeur retournée 
+def test_capitalize_string():
+	assert capitalize_string('test') == 'Test'
 ```
 
 Pour lancer le test unitaire :
